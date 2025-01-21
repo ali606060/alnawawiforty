@@ -82,12 +82,13 @@ class _LocalAudio extends State<LocalAudio> {
       child: Container(
         width: 70,
         height: 50,
-        child: RaisedButton(
-            shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+        child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25)),
+              primary: Colors.black45,
+              onPrimary: colorApp.yellow1,
+            ),
             child: icon,
-            color: Colors.black45,
-            textColor: colorApp.yellow1,
             onPressed: onPressed),
       ),
     );
